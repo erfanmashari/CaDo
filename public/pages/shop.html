@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>CaDo</title>
+</head>
+
+<body class="flex justify-center">
+    <div class="w-9/12 bg-dark text-white rounded-3xl mt-16 p-6">
+        <nav class="w-full flex flex-row justify-between gap-6 mt-4 px-24">
+            <div class="flex flex-row gap-6">
+                <button id="contactus" class="hover-text-gold">CONTACT US</button>
+                <button id="aboutus" class="hover-text-gold">ABOUT US</button>
+                <button id="shop" class="hover-text-gold">SHOP</button>
+            </div>
+            <div class="flex flex-row gap-6">
+                <button id="cart" class="text-white hover-text-gold">
+                    <img src="../img/Cart.svg" alt="shopping-cart" class="fill-current text-white">
+                </button>
+            </div>
+        </nav>
+        <main id="shop-title" class="text-gold text-3xl mt-6 px-24">
+            SHOP
+        </main>
+        <div id="products" class="w-full flex flex-row justify-around mt-6 mb-6 px-24 ">
+            <div class="flex flex-col justify-center items-center text-center">
+                <img src="../img/cat food.jpg" alt="cat-food" class="w-40 h-40">
+                <h1 class="text-3xl my-3">CAT FOOD</h1>
+                <p class="mb-3">
+                    THIS IS CONTAIN ANY<br>
+                    VITAMIN THAT YOU NEED FOR<br> 
+                    YOUR CUTE CAT
+                </p>
+                <p class="text-2xl text-gold">PRICE: $100</p>
+                <button class="add-btn w-full bg-blue-600 rounded-lg hover:text-green-500 mt-8 p-4">ADD TO CART</button>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <img src="../img/dog food.jpg" alt="dog-food" class="w-40 h-40">
+                <h1 class="text-3xl my-3">DOG FOOD</h1>
+                <p class="mb-3">
+                    THIS IS CONTAIN ANY<br>
+                    VITAMIN THAT YOU NEED FOR<br> 
+                    YOUR CUTE DOG
+                </p>
+                <p class="text-2xl text-gold">PRICE: $100</p>
+                <button class="add-btn w-full bg-blue-600 rounded-lg hover:text-green-500 mt-8 p-4">ADD TO CART</button>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <img src="../img/download.jpg" alt="mix-food" class="w-40 h-40">
+                <h1 class="text-3xl my-3">MIX FOOD</h1>
+                <p class="mb-3">
+                    THIS IS CONTAIN ANY<br>
+                    VITAMIN THAT YOU NEED FOR<br> 
+                    YOUR CUTE PET
+                </p>
+                <p class="text-2xl text-gold">PRICE: $200</p>
+                <button class="add-btn w-full bg-blue-600 rounded-lg hover:text-green-500 mt-8 p-4">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="cart-side" class="hidden w-full mt-10 px-24">
+            <div class="flex flex-row justify-between">
+                <h1 class="text-3xl text-gold">SHOPPING CART</h1>
+                <div class="flex flex-row gap-8">
+                    <button id="remove-all" class="text-blue0-600">REMOVE ALL</button>
+                    <button id="close-cart" class="text-3xl">X</button>
+                </div>
+            </div>
+            <div class="overflow-y-scroll h-80 mt-4">
+                <table id="ul" class="w-full text-center">
+                    <tr class="w-full flex flex-row">
+                        <th class="w-2/12 border border-white">PIC</th>
+                        <th class="w-5/12 border border-white">PRODUCT NAME</th>
+                        <th class="w-2/12 border border-white">PRICE</th>
+                        <th class="w-2/12 border border-white">REMOVE</th>
+                    </tr>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer class="w-full px-24 flex flex-row text-center gap-8 mt-24">
+            <button id="home" class="w-3/12 text-3xl font-extrabold border-t-8 border-gold mb-6 pt-4">HOME</button>
+            <button id="cats" class="w-3/12 text-3xl font-extrabold border-t-8 border-gold mb-6 pt-4">CAT</button>
+            <button id="dogs" class="w-3/12 text-3xl font-extrabold border-t-8 border-gold mb-6 pt-4">DOG</button>
+            <button id="blog" class="w-3/12 text-3xl font-extrabold border-t-8 border-gold mb-6 pt-4">BLOG</button>
+        </footer>
+    </div>
+
+    <script src="../Cart.js"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>

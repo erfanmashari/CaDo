@@ -1,0 +1,38 @@
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.bg-dark {
+  background-image: linear-gradient(to left, rgb(47, 45, 45), rgb(31, 29, 29));
+}
+
+.text-gold {
+  color: rgb(47, 230, 47);
+}
+
+.bg-hover-gold:hover {
+  background-color: rgb(45, 189, 45);
+}
+
+.border-gold {
+  color: rgb(31, 29, 29);
+  border-color: rgb(56, 53, 53);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(56, 53, 53);
+}
+
+.border-gold:hover {
+  color: rgb(47, 230, 47);
+  border-color: rgb(47, 230, 47);
+  -webkit-text-stroke-width: 0px;
+}
+
+.border-gold:focus {
+  color: rgb(47, 230, 47);
+  border-color: rgb(47, 230, 47);
+  -webkit-text-stroke-width: 0px;
+}
+
+.hover-text-gold:hover {
+  color: rgb(47, 230, 47);
+}
